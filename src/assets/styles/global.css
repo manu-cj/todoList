@@ -1,0 +1,10 @@
+@import './../../ui/header/header.css';
+@import './../../ui/main/main.css';
+@import './../../ui/footer/footer.css';
+@import './../../ui/shared/shared.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

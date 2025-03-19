@@ -1,0 +1,78 @@
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.add-task {
+    background-color: #e8ebe8;
+    border: none;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-task:hover {
+    background-color: #d3d6d3;
+}
+
+.submit-task, .close {
+    background-color: #45a049;
+    border: none;
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.submit-task:hover {
+    background-color: #4CAF50;
+}
+.close {
+    background-color: rgb(77, 77, 77);
+}
+
+.close:hover {
+    background-color: rgb(104, 104, 104);
+}
+
+
+.delete-task {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
