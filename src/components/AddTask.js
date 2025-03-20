@@ -63,7 +63,10 @@ const AddTask = () => {
             tasks.push(newTask);
             localStorage.setItem('todoList', JSON.stringify(tasks));
             modal.remove();
-            Task(taskValue);
+            const taskSection = document.querySelector('.task-section');
+            taskSection.innerHTML = '';
+            getTasks();
+           
         }
     }
     );

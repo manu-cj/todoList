@@ -1,15 +1,4 @@
-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+
 
 .add-task {
     background-color: #e8ebe8;
@@ -22,7 +11,7 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -75,4 +64,28 @@ button {
 .dark-mode {
     background-color: #333;
     color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+    outline: none;
+}
+
+i {
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
 }

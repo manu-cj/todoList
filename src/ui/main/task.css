@@ -2,24 +2,38 @@
 .task-section {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: start;
     gap: 1rem;
-    width: 100%;
+    width: 100%; 
 }
+
 .task {
-    width: 300px;
+    min-width: 95%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    
     border-radius: 5px;
     border-top-right-radius: 0;
-    background-color: rgb(255, 221, 0);
+    background-color: rgb(255, 204, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
     transition: all 0.2s ease-in-out;
+}
+
+.titleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(250, 224, 171, 0.17);
 }
 
 
@@ -28,9 +42,44 @@
     scale: 1.02;
 }
 
+.controlDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1.5rem;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(250, 224, 171, 0.44);
+}
+
 
 input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    .task-section {
+        justify-content: flex-start !important;
+        align-items: center;
+    }
+
+    .task {
+        min-width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .task-section {
+        justify-content: flex-start !important;
+        align-items: center;
+        padding: 50px;
+    }
+    .task {
+        min-width: 30%;
+    }
 }
