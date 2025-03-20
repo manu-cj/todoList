@@ -31,9 +31,17 @@ const Task = (taskId, taskText, taskStatus) => {
         taskCheck.checked = true;
         const taskDelete = document.createElement('button');
         taskDelete.classList.add('delete-task');
-        taskDelete.textContent = 'Supprimer';
+        
         controlDiv.appendChild(taskDelete); 
         taskTitle.style.textDecoration = 'line-through';
+        setTimeout(() => {
+            taskDelete.style.width = '150px';
+            taskDelete.style.color = 'white';
+            taskDelete.style.padding = '5px 10px';
+        }, 300)
+        setTimeout(()=> {
+            taskDelete.textContent = 'Supprimer';
+        }, 500)
     }
 
     taskCheck.addEventListener('change', () => {
@@ -41,8 +49,17 @@ const Task = (taskId, taskText, taskStatus) => {
         if (taskCheck.checked === true) {
             const taskDelete = document.createElement('button');
             taskDelete.classList.add('delete-task');
-            taskDelete.textContent = 'Supprimer';
+          
             controlDiv.appendChild(taskDelete);
+            setTimeout(() => {
+                
+                taskDelete.style.width = '150px';
+                taskDelete.style.color = 'white';
+                taskDelete.style.padding = '5px 10px';
+            }, 300)
+            setTimeout(()=> {
+                taskDelete.textContent = 'Supprimer';
+            }, 500)
             taskTitle.style.textDecoration = 'line-through';
             taskDelete.addEventListener('click', () => {
                 deleteTask(taskId);
