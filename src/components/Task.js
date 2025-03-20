@@ -68,8 +68,18 @@ const Task = (taskId, taskText, taskStatus) => {
         } else {
             const taskDelete = controlDiv.querySelector('.delete-task');
             if (taskDelete) {
-                taskDelete.remove();
-                taskTitle.style.textDecoration = 'none';
+                setTimeout(() => {
+                
+                    taskDelete.style.width = '0px';
+                    taskDelete.style.color = 'white';
+                    taskDelete.style.padding = '5px 0px';
+                }, 300)
+                setTimeout(()=> {
+                    taskDelete.textContent = '';
+                    taskDelete.remove();
+                    taskTitle.style.textDecoration = 'none';
+                }, 500)
+                
             }
         }
     });
