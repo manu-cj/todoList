@@ -4,7 +4,7 @@ Ce projet est une application de gestion de tâches simple et intuitive. Elle pe
 
 # Voir le projet 
 
-[Voir le projet en ligne](todo-list-alpha-lyart.vercel.app)
+[Voir le projet en ligne](https://todo-list-alpha-lyart.vercel.app/)
 # Structure du projet
 
 Ce projet est une application développée avec **Vite** et JavaScript vanilla. Voici l'organisation des fichiers et dossiers :
