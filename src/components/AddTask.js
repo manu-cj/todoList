@@ -16,12 +16,12 @@ const AddTask = () => {
     modalContent.appendChild(form);
 
     const titleForm = document.createElement('h2');
-    titleForm.textContent = 'Ajouter une tâche';
+    titleForm.textContent = 'Add a new task';
     form.appendChild(titleForm);
 
     const label = document.createElement('label');
     label.setAttribute('for', 'task');
-    label.textContent = 'Nom de la tâche :';
+    label.textContent = 'Name task :';
     form.appendChild(label);    
 
     const input = document.createElement('input');
@@ -37,13 +37,13 @@ const AddTask = () => {
 
     const closeButton = document.createElement('button');
     closeButton.classList.add('close');
-    closeButton.textContent = 'Fermer';
+    closeButton.textContent = 'Close';
     controlDiv.appendChild(closeButton);
 
     const submit = document.createElement('button');
     submit.setAttribute('type', 'submit');
     submit.classList.add('submit-task');
-    submit.textContent = 'Ajouter';
+    submit.textContent = 'Add';
     controlDiv.appendChild(submit);
 
     
