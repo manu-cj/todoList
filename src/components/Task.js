@@ -42,6 +42,10 @@ const Task = (taskId, taskText, taskStatus) => {
         setTimeout(()=> {
             taskDelete.textContent = 'Supprimer';
         }, 500)
+        taskDelete.addEventListener('click', () => {
+            deleteTask(taskId);
+            task.remove();
+        })
     }
 
     taskCheck.addEventListener('change', () => {
@@ -83,7 +87,7 @@ const Task = (taskId, taskText, taskStatus) => {
             }
         }
     });
-
+    
     
     
 }

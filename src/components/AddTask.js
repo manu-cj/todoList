@@ -62,11 +62,11 @@ const AddTask = () => {
             };
             tasks.push(newTask);
             localStorage.setItem('todoList', JSON.stringify(tasks));
-            modal.remove();
+            
             const taskSection = document.querySelector('.task-section');
             taskSection.innerHTML = '';
             getTasks();
-           
+            modal.remove();
         }
     }
     );
